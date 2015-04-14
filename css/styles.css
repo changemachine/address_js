@@ -1,12 +1,28 @@
+#contact-list {
+  display: none;
+}
+
 #show-contact {
-    display: none;
+  display: none;
 }
 
 .contact {
-    cursor: pointer;
-    color: #0088cc;
+  cursor: pointer;
+  color: #66FFFF;
 }
 
 .contact:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+body {
+    background-color: #009999;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+.form-control {
+    color: black;
 }
