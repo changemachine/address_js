@@ -12,16 +12,9 @@
         <div class="container">
             <h1>Address Book</h1>
             <div class="row">
-                <div class="col-md-6">
-                    <div id="show-contact">
-                        <h2></h2>
-
-                        <p>First name: <span class="first-name"></span></p>
-                        <p>Last name: <span class="last-name"></span></p>
-                        <p>Address: <span class="address"></span></p>
-                    </div>
+                <div class='col-sm-3'>
                 </div>
-            </div>
+                <div class="col-sm-6">
                     <h2>Add a contact:</h2>
                     <form id="new-contact">
                         <div class="form-group">
@@ -54,16 +47,26 @@
                             <input type="text" class="form-control" id="new-zip">
                         </div>
 
-
-                        <button type="submit">Add Contact</button>
+                        <button class='btn btn-danger' type="submit">Add Contact</button>
                     </form>
-
+                </div>
+                <div class='col-sm-3'>
+                </div>
+                <div class="col-sm-6">
                     <h2>Contacts:</h2>
                     <ul id="contacts">
-
                     </ul>
                 </div>
-            </div>
+                <div class="col-sm-6">
+                    <div id="show-contact">
+                        <h2></h2>
+                        <p>First name: <span class="first-name"></span></p>
+                        <p>Last name: <span class="last-name"></span></p>
+                        <p>Address: <span class="address"></span></p>
+                    </div>
+                </div>
+
+
         </div>
     </body>
 </html>
