@@ -10,79 +10,83 @@
 </head>
 <body>
   <div class="container">
-
-    <h1>Welcome to Address Book Javascript Edition</h1>
+    <header class='jumbotron'>
+        <br>
+        <br>
+        <br>
+        <br>
+    </header>
 
     <div class="row">
-      <div class="col-sm-6">
-        <form id="addContact">
-            <div class='row'>
+      <div id='new-contact' class="col-sm-6">
+            <form id="addContact">
+                <div class='row form-group'>
+                    <div class="col-md-6">
+                        <input class="form-control input-sm firstName" type="text"  value='Firsty' placeholder='First Name'>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control input-sm lastName" type="text" value='Laster' placeholder='Last Name'>
+                    </div>
+                </div>
 
-          <div class="col-md-6">
-            <label for="firstName">First Name:</label>
-            <input class="form-control firstName" type="text"  value='Firsty'>
-          </div>
+              <div class='row' id='new-addresses'>
+                  <div class='new-address col-md-3'>
+                    <div class='form-group'>
+                        <select class ="addressType">
+                            <option id='type' value='Address'>Address Type</option>
+                            <option id='home' value='Home'>Home</option>
+                            <option id='office' value='Office'>Office</option>
+                            <option id='vacation' value='Vacay Home'>Vacay Home</option>
+                            <option id='mansion' value='Mansion'>Mansion</option>
+                            <option id='mancave' value='Man-Cave'>Man-Cave</option>
+                            <option id='treehouse' value='Treehouse'>Treehouse</option>
+                            <option id='guesthouse' value='Guesthouse'>Guesthouse</option>
+                        </select>
+                    </div>
 
-          <div class="col-md-6">
-            <label for="lastName">Last Name:</label>
-            <input class="form-control lastName" type="text" value='Laster'>
-          </div>
-      </div><br>
+                    <div class="form-group">
+                        <input class="form-control input-sm street" type="text" placeholder="Street" value='123 Street'>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-sm city" type="text" placeholder="City" value='Portland'>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-sm state" type="text" placeholder="State" value='OR'>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control input-sm zipcode" type="text" placeholder="Zipcode" value='97979'>
+                    </div>
+                  </div>
+            </div>
+                <div class='col-md-6'>
+                    <button class="btn btn-success btn-sm primary-ui"type="submit">Add Contact</button>
+                    <!-- <span class='btn btn-primary btn-sm secondary-ui' id='add-address'>Another address</span> -->
+                </div>
 
-      <div id='new-addresses'>
-          <div class='new-address'>
-        <div class='form-group'>
-            <select class ="addressType">
-                <option id='type' value='Address'>Address Type</option>
-                <option id='home' value='Home'>Home</option>
-                <option id='office' value='Office'>Office</option>
-                <option id='vacation' value='Vacay Home'>Vacay Home</option>
-                <option id='mansion' value='Mansion'>Mansion</option>
-                <option id='mancave' value='Man-Cave'>Man-Cave</option>
-                <option id='treehouse' value='Treehouse'>Treehouse</option>
-                <option id='guesthouse' value='Guesthouse'>Guesthouse</option>
-            </select>
-        </div>
+          </form>
 
-          <div class="form-group">
-            <input class="form-control street" type="text" placeholder="Street" value='123 Street'>
-          </div>
-
-          <div class="form-group">
-            <input class="form-control city" type="text" placeholder="City" value='Portland'>
-          </div>
-
-          <div class="form-group">
-            <input class="form-control state" type="text" placeholder="State" value='OR'>
-          </div>
-
-          <div class="form-group">
-            <input class="form-control zipcode" type="text" placeholder="Zipcode" value='97979'>
-          </div>
-
-          </div>
-      </div>
-            <span class='btn btn-primary' id='add-address'>Another address</span>
-            <button class="btn btn-success"type="submit">Add Contact</button>
-        </form>
-
-
-        <h2>Contact List</h2>
-        <ul id="contacts">
-
-        </ul>
+          <h2>Contact List</h2>
+          <ul id="contacts"></ul>
       </div>
 
-      <div class="col-sm-6">
+
+      <div class="col-sm-6 secondary-ui">
           <div id="show-contact">
         <h2>Contacts</h2>
-          <p>First name: <span class="first-name"></span></p>
-          <p>Last name: <span class="last-name"></span></p>
-              <ul id='addresses'>
-              </ul>
+          <p><span class="firstName"> </span><span> </span><span class="lastName"> </span></p>
+          <ul id='addresses'></ul>
+          <span class='btn btn-primary btn-xs' id='add-address'>Add Another Address</span>
+          <span class='btn btn-danger btn-xs' id='cancel-address'>Cancel</span>
+        </div>
+        <div id="extra-address-form">
+
         </div>
       </div>
+
     </div>
+
+
+
   </div>
 </body>
 </html>
