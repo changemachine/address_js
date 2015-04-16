@@ -43,3 +43,7 @@ body::after {
   position: absolute;
   z-index: -1;
 }
+
+#addContact div {
+    display: inline-block;
+    }

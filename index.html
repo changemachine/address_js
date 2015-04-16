@@ -17,21 +17,27 @@
         <br>
     </header>
 
-    <div class="row">
-      <div id='new-contact' class="col-sm-6">
-            <form id="addContact">
-                <div class='row form-group'>
-                    <div class="col-md-6">
+        <div class="row">
+            <div id='new-contact' class="col-md-12">
+                <form id="addContact">
+                    <div class="col-sm-4">
                         <input class="form-control input-sm firstName" type="text"  value='Firsty' placeholder='First Name'>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-sm-4">
                         <input class="form-control input-sm lastName" type="text" value='Laster' placeholder='Last Name'>
                     </div>
-                </div>
+                    <div class='col-sm-4'>
+                        <span class="input-group-btn"><button class="btn btn-success btn-sm primary-ui" type="submit">Add Contact</button></span>
+                    </div>
+                    <!-- <span class='btn btn-success btn-xs' type='submit'>Add Contact</span> -->
+                </form>
+            </div>
+        </div> <!-- END NEW-CONTACT ROW -->
 
-              <div class='row' id='new-addresses'>
+                <!-- ALL-ON-ONE-PAGE FORM
+                <div class='row' id='new-addresses'>
                   <div class='new-address col-md-3'>
-                    <div class='form-group'>
+                      <div class='form-group'>
                         <select class ="addressType">
                             <option id='type' value='Address'>Address Type</option>
                             <option id='home' value='Home'>Home</option>
@@ -57,17 +63,13 @@
                         <input class="form-control input-sm zipcode" type="text" placeholder="Zipcode" value='97979'>
                     </div>
                   </div>
-            </div>
-                <div class='col-md-6'>
+            </div> -->
+                    <!-- ALT/OLD END OF FORM
                     <button class="btn btn-success btn-sm primary-ui"type="submit">Add Contact</button>
-                    <!-- <span class='btn btn-primary btn-sm secondary-ui' id='add-address'>Another address</span> -->
-                </div>
-
-          </form>
+          </form> -->
 
           <h2>Contact List</h2>
           <ul id="contacts"></ul>
-      </div>
 
 
       <div class="col-sm-6 secondary-ui">

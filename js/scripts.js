@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // REVEAL "ADD NEW ADDRESS" FIELDS
     $("#add-address").click(function() {
+        //REMEMBER... click-handlers remember their state at setup
         $("#extra-address-form").append('<div class="new-address">' +
              '<div class="form-group">' +
                 '<select class ="addressType">' +
@@ -66,13 +67,13 @@ $(document).ready(function() {
         $(".secondary-ui").show();
         $("#cancel-address").hide();
         // $(".primary-ui").hide();
-        $("#show-contact h2").text(newContact.firstName);
-        $(".firstName").text(newContact.firstName);
-        $(".lastName").text(newContact.lastName);
+        $("#show-contact h2").text(newContact.firstName + " "+ newContact.lastName);
+        // $(".firstName").text(newContact.firstName);
+        // $(".lastName").text(newContact.lastName);
         $("#addresses").text("");//RESET ADDRESSES LI (so it's only displaying the current one)
 
       newContact.addresses.forEach(function(address) {
-          $("#addresses").append("<li>" + address.addressType + ": " + address.street + ", " + address.city + ", " + address.state + "</li>");
+          $("#addresses").append("<p>" + address.addressType + "<br>" + address.street + "<br>" + address.city + ", " + address.state + "</li>");
       });
     });
 
